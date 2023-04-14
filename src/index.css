@@ -5,24 +5,72 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./images/home.png);
-  background-repeat: no-repeat;
+ background-color: var(--darkGold);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --black: #080301;
+  --gold: #ca520c;
+  --darkGold:#271002;
+  --text: white;
+  --opGold: rgba(197, 110, 11, 0.329);
+}
 
 /* home section  */
+.home {
+  height: 120vh;
+  background-image: url(./images/home.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.introContainer {
+  height:  500px;
+  width: 500px;
+  margin-left: 100px;
+  
+}
+.introContainer h1 {
+  color: var(--text);
+  font-size: 50px;
+  padding: 20px;
+}
+.introContainer p {
+  padding: 20px;
+  font-size: 20px;
 
+}
+.homeBtn {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background-color: var(--black);
+}
+.homeBtn:hover {
+  background-color: var(--gold);
+  color: var(--text);
+}
 
 /* footer section  */
 footer{
-  margin: 0;
   text-align: center;
   
 }
-footer a{
+footer a, p{
   text-decoration: none;
+  color: var(--gold);
+
+}
+footer a:hover {
+  color: var(--text);
 }
