@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
  background-color: var(--darkGold);
+ 
+ background-image: url(./images/home.png);
+ background-repeat: no-repeat;
 }
 
 code {
@@ -21,17 +24,46 @@ code {
   --gold: #ca520c;
   --darkGold:#271002;
   --text: white;
-  --opGold: rgba(197, 110, 11, 0.329);
+  --opGold: rgba(150, 93, 27, 0.1);
 }
-
-/* home section  */
-.home {
-  height: 120vh;
-  background-image: url(./images/home.png);
-  background-repeat: no-repeat;
+/* header section  */
+.navBar {
   display: flex;
   align-items: center;
 }
+
+.link {
+  margin-left: 30px;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--gold);
+  font-size: 20px;
+}
+.link:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+.visible {
+  display: block;
+  visibility: visible;
+}
+.invisible {
+  display: none;
+  visibility: hidden;
+}
+
+
+/* home section  */
+.homepage{
+  background-image: url(./images/home.png);
+  background-repeat: no-repeat;
+}
+.home {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
 .introContainer {
   height:  500px;
   width: 500px;
@@ -53,13 +85,31 @@ code {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid var(--gold);
-  color: var(--gold);
   background-color: var(--black);
+  text-align: center;
 }
 .homeBtn:hover {
   background-color: var(--gold);
   color: var(--text);
 }
+.homeContact{
+  text-decoration: none;
+  color: var(--gold);
+
+}
+.homeContact:hover {
+  background-color: var(--gold);
+  color: var(--text);
+}
+
+.menuBtn {
+  padding: 20px;
+  color: var(--gold);
+}
+.menuBtn:hover{
+  color: var(--text);
+}
+
 
 /* footer section  */
 footer{
@@ -73,4 +123,7 @@ footer a, p{
 }
 footer a:hover {
   color: var(--text);
+}
+.locationIcon{
+  padding-right: 10px;
 }
