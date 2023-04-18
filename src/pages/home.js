@@ -1,4 +1,5 @@
 import Header from '../components/header';
+import Footer from '../components/footer';
 import {Link} from 'react-router-dom';
 
 
@@ -16,6 +17,8 @@ function Home(){
                   <Link className='homeContact' to={'/contact'}>Contact Us</Link>
                </button>
           </div>
+          <Footer />
+           
         </div>
         
     )

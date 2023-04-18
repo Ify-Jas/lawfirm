@@ -5,10 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- background-color: var(--darkGold);
- 
+ background-color: var(--black);
+/*  
  background-image: url(./images/home.png);
- background-repeat: no-repeat;
+ background-repeat: no-repeat; */
 }
 
 code {
@@ -43,20 +43,14 @@ code {
   color: var(--text);
   text-decoration: underline;
 }
-.visible {
-  display: block;
-  visibility: visible;
-}
-.invisible {
-  display: none;
-  visibility: hidden;
-}
+
 
 
 /* home section  */
 .homepage{
   background-image: url(./images/home.png);
   background-repeat: no-repeat;
+  height: fit-content;
 }
 .home {
   display: flex;
@@ -114,6 +108,7 @@ code {
 /* footer section  */
 footer{
   text-align: center;
+  margin-top: 20px;
   
 }
 footer a, p{
@@ -127,3 +122,277 @@ footer a:hover {
 .locationIcon{
   padding-right: 10px;
 }
+
+/* about section  */
+
+.about {
+  background-color: var(--black);
+}
+.about section {
+  display: flex;
+  justify-content: center;
+  width: 200vh;
+  margin: 20px;
+}
+.about h1{
+  padding: 10px;
+  color: var(--gold);
+  font-size: 50px;
+}
+.aboutPic{
+  margin: 20px;
+  height: 300px;
+  width: 60%;
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+}
+.about p {
+  color: var(--text);
+  font-size: 18px;
+  margin: 20px;
+  
+}
+/* service section  */
+.services {
+  background-image: url(./images/service.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+
+}
+.services .link:hover{
+  color: var(--darkGold);
+}
+.services .menuBtn:hover{
+  color: var(--darkGold);
+}
+.serviceCard {
+  height: fit-content;
+  width: 300px;
+  margin-top: 80px;
+  margin-left: 30px;
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.serviceCard .icon, h2, p {
+  padding: 10px;
+}
+.serviceCard button {
+  width: fit-content !important;
+  margin: 0px 0px 5px 5px;
+}
+.cardRight {
+  margin-left: -250px !important;
+}
+
+.servicesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+/* testimonial section  */
+.testimonial {
+  background-image: url(./images/testimonials.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.testimonyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.testimonyCard{
+  height: 300px;
+  width: 300px;
+  margin: 80px 0px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.testimonyCard p {
+  font-size: 20px;
+  color: var(--text);
+}
+/* contact section  */
+.contact{
+  background-image: url(./images/contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainContainer {
+  display: flex;
+
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  margin: 20px 20px 20px 100px;
+  border-radius: 10px;
+  background-color: var(--opGold);
+  
+}
+.contactContainer input, textarea {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
+  width: 80%;
+}
+.contactContainer select {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
+  width: 420px;
+
+}
+
+.contactContainer textarea {
+  height: 100px;
+}
+.submitBtn {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
+  background-color: var(--gold);
+  color: var(--text);
+  font-size: 15px;
+  width: 150px;
+  font-weight: bold;
+}
+.submitBtn:hover {
+  background-color: var(--text);
+  color: var(--gold);
+}
+.contacts {
+  margin: 80px 0px 20px 200px;
+}
+.contacts h2{
+  color: var(--gold);
+}
+.contacts p {
+  color: var(--text);
+}
+.contactIcon{
+  color: var(--text);
+  margin: 15px;
+}
+.contactIcon:hover {
+  color: var(--gold);
+}
+.ikon{
+  padding-right: 10px;
+}
+
+@media (max-width: 400px){
+  /* home and nav section  */
+  nav{
+   display: flex;
+   flex-direction: column;
+  }
+  .menuBtn{
+    font-size: 30px;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .home h1{
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: -60px;
+    
+  }
+  .home p{
+    font-size: 15x;
+    width: 300px;
+    text-align: center;
+    margin-left: 20px;
+  }
+  .homeBtn{
+    margin-top: -50px;
+  }
+  /* service section  */
+  .services{
+    background-color: var(--text);
+    background-image: none;
+    width: fit-content;
+  }
+  .servicesContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .cardRight{
+    margin-left: 20px !important;
+  }
+  /* testimonial section  */
+  .testimonial{
+    background-image: none;
+    background-color: var(--gold);
+  }
+  .testimonial .menuBtn{
+    color: var(--black);
+  }
+  .testimonial .menuBtn:hover{
+    color: var(--text);
+  }
+  .testimonial .link{
+    color: var(--black);
+  }
+  .testimonial .link:hover{
+    color: var(--text);
+  }
+  .testimonial footer p{
+    color: var(--black);
+  }
+  .testimonial footer a{
+    color: var(--black);
+  }
+  .testimonial footer a:hover{
+    color: var(--text);
+  }
+  /* contact section  */
+  .contact{
+    background-image: none;
+    background-color: var(--black);
+  }
+  .mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactContainer{
+    width: 300px;
+    margin-left: 20px;
+  }
+  .contactContainer select{
+    width: 260px;
+  }
+  .contacts {
+    margin-left: 30px;
+  }
+}
+
