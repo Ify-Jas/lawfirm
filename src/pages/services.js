@@ -2,7 +2,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faPeopleRoof, faBuilding, faHandcuffs, faGavel} from '@fortawesome/free-solid-svg-icons';
+import {faPeopleRoof, faBuilding, faHandcuffs, faGavel, faCreditCard, faPassport} from '@fortawesome/free-solid-svg-icons';
 
 
 function Services() {
@@ -49,8 +49,8 @@ function Services() {
                     
                 </div>
                 <div className='serviceCard'>
-                   <FontAwesomeIcon className='icon' icon={faPeopleRoof} size='3x' />
-                   <h2>Family Law</h2>
+                   <FontAwesomeIcon className='icon' icon={faCreditCard} size='3x' />
+                   <h2>Debt Recovery</h2>
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa placerat duis ultricies lacus sed turpis.</p>
                    <button className='homeBtn'>
                       <Link className='homeContact' to={'/contact'}>Contact Us</Link>
@@ -58,8 +58,8 @@ function Services() {
                     
                 </div>
                 <div className='serviceCard'>
-                   <FontAwesomeIcon className='icon' icon={faPeopleRoof} size='3x' />
-                   <h2>Family Law</h2>
+                   <FontAwesomeIcon className='icon' icon={faPassport} size='3x' />
+                   <h2>Immigration Law</h2>
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa placerat duis ultricies lacus sed turpis.</p>
                    <button className='homeBtn'>
                       <Link className='homeContact' to={'/contact'}>Contact Us</Link>
