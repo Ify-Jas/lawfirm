@@ -154,11 +154,11 @@ footer a:hover {
 }
 /* service section  */
 .services {
-  background-image: url(./images/service.png);
+  /* background-image: url(./images/service.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: fit-content;
-
+  height: fit-content; */
+background-color: var(--text);
 }
 .services .link:hover{
   color: var(--darkGold);
@@ -185,13 +185,14 @@ footer a:hover {
   width: fit-content !important;
   margin: 0px 0px 5px 5px;
 }
-.cardRight {
-  margin-left: -250px !important;
+.serviceHead{
+  text-align: center;
+  font-size: 50px;
 }
 
 .servicesContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: start;
   flex-wrap: wrap;
 }

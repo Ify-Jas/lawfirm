@@ -9,8 +9,9 @@ function Services() {
     return(
         <div className='services'>
             <Header />
-        
+                <h1 className='serviceHead'>Main Service Area</h1>
               <main className='servicesContainer'>
+               
                 <div className='serviceCard'>
                    <FontAwesomeIcon className='icon' icon={faPeopleRoof} size='3x' />
                    <h2>Family Law</h2>
@@ -47,8 +48,8 @@ function Services() {
                    </button>
                     
                 </div>
-                {/* <div className='serviceCard'>
-                   <FontAwesomeIcon icon={faPeopleRoof} size='3x' />
+                <div className='serviceCard'>
+                   <FontAwesomeIcon className='icon' icon={faPeopleRoof} size='3x' />
                    <h2>Family Law</h2>
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa placerat duis ultricies lacus sed turpis.</p>
                    <button className='homeBtn'>
@@ -57,14 +58,14 @@ function Services() {
                     
                 </div>
                 <div className='serviceCard'>
-                   <FontAwesomeIcon icon={faPeopleRoof} size='3x' />
+                   <FontAwesomeIcon className='icon' icon={faPeopleRoof} size='3x' />
                    <h2>Family Law</h2>
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa placerat duis ultricies lacus sed turpis.</p>
                    <button className='homeBtn'>
                       <Link className='homeContact' to={'/contact'}>Contact Us</Link>
                    </button>
                     
-                </div> */}
+                </div>
 
 
               </main>
