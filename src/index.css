@@ -334,6 +334,13 @@ footer a:hover {
   .homeBtn{
     margin-top: -50px;
   }
+  /* about section  */
+  .about section {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+  }
   /* service section  */
   .services{
     background-color: var(--text);
